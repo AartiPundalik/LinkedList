@@ -4,56 +4,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using LinkedList;
 
 namespace LinkedList
 {
     internal class LinkedList
     {
-        
-       
-            internal Node head;
-            internal void Addlast(int data)
+        internal Node head;
+        internal void Addlast(int data)
+        {
+            Node newNode = new Node(data); 
+
+            if (this.head == null) 
             {
-                Node newNode = new Node(data); 
+                this.head = newNode;
 
-                if (this.head == null) 
-                {
-                    this.head = newNode;
-
-                }
-                else
-                {
-                    Node temp = head;
-                    while (temp.next != null) 
-                    {
-                        temp = (Node)temp.next;
-                    }
-                    temp.next = newNode;
-                }
-                Console.WriteLine("{0} is inserted in to Linked list", newNode.data);
             }
-            public void Display()
+            else
             {
-                Console.WriteLine("Display of Nodes");
-                Node temp = this.head;
-                if (temp == null)
+                Node temp = head;
+                while (temp.next != null) 
                 {
-                    Console.WriteLine("LinkedList is Empty");
-                    return;
+                    temp = (Node)temp.next;
                 }
-                else
+                temp.next = newNode;
+            }
+            Console.WriteLine("{0} is inserted in to Linked list", newNode.data);
+        }
+        public void Display()
+        {
+            Console.WriteLine("Display of Nodes");
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+                return;
+            }
+            else
+            {
+                while (temp != null)
                 {
-                    while (temp != null)
-                    {
-                        Console.Write("" + temp.data + " ");
-                        temp = (Node)temp.next;
+                    Console.Write("" + temp.data + " ");
+                    temp = (Node)temp.next;
 
-                    }
                 }
             }
         }
+        public void AddAtfirst(int data)
+        {
+            Node newNode1 = new Node(data);
+            newNode1 = head;
+            head = newNode1;
+            Console.WriteLine("{0} is added" + newNode1.data);
+        }
     }
-    
+}
 
 
 
@@ -61,5 +66,8 @@ namespace LinkedList
 
 
 
-    
+
+
+
+
 
