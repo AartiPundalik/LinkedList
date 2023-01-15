@@ -1,0 +1,8 @@
+E:\program\book\LinkedList\LinkedList\bin\Debug\LinkedList.exe.config
+E:\program\book\LinkedList\LinkedList\bin\Debug\LinkedList.exe
+E:\program\book\LinkedList\LinkedList\bin\Debug\LinkedList.pdb
+E:\program\book\LinkedList\LinkedList\obj\Debug\LinkedList.csproj.AssemblyReference.cache
+E:\program\book\LinkedList\LinkedList\obj\Debug\LinkedList.csproj.SuggestedBindingRedirects.cache
+E:\program\book\LinkedList\LinkedList\obj\Debug\LinkedList.csproj.CoreCompileInputs.cache
+E:\program\book\LinkedList\LinkedList\obj\Debug\LinkedList.exe
+E:\program\book\LinkedList\LinkedList\obj\Debug\LinkedList.pdb
