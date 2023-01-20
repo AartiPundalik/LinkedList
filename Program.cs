@@ -72,6 +72,15 @@ namespace LinkedList
                     num5.Display();
                     break;
 
+                case 7:
+                    LinkedList num6 = new LinkedList();
+                    num6.Addlast(56);
+                    num6.Addlast(30);
+                    num6.Addlast(70);
+                    Console.WriteLine("Searching node with data {0} in Linked list", 30);
+                    num6.Search(30);
+                    break;
+
             }
 
 
