@@ -15,7 +15,7 @@ namespace LinkedList
             
                 Console.WriteLine("Welcome to the Linked List");
                 Console.WriteLine("Enter a program number given below");
-                Console.WriteLine("1:- Linked List\n" + "2:- Custom Linked Listed\n");
+                Console.WriteLine("1:- Linked List\n" + "2:- Custom Linked Listed\n" + "3:- Linked List U 3\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -34,11 +34,23 @@ namespace LinkedList
                         customLL.Addlast(56);
                         customLL.Display();
                         break;
-                }
-                Console.ReadLine();
+
+                    case 3:
+                    LinkedList num2 = new LinkedList();
+                    num2.AddAtfirst(56);
+                    num2.Addlast(30);
+                    num2.Addlast(70);
+                    num2.Display();
+                    break;
+            }
+
+        
+        Console.ReadLine();
             }
         }
     }
+
+
     
 
 
