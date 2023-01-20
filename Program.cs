@@ -90,6 +90,19 @@ namespace LinkedList
                     num7.Display();
                     break;
 
+                case 9:
+                    LinkedList num8 = new LinkedList();
+                    num8.Addlast(56);
+                    num8.Addlast(30);
+                    num8.Addlast(40);
+                    num8.Addlast(70);
+                    Console.WriteLine("Before deletion:");
+                    num8.Display();
+                    Console.WriteLine("After deletion:");
+                    num8.SearchNodeDeleteNode(40);
+                    num8.Display();
+                    break;
+
             }
 
 
