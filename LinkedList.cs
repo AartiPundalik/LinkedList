@@ -13,9 +13,9 @@ namespace LinkedList
         internal Node head;
         internal void Addlast(int data)
         {
-            Node newNode = new Node(data); 
+            Node newNode = new Node(data);
 
-            if (this.head == null) 
+            if (this.head == null)
             {
                 this.head = newNode;
 
@@ -23,7 +23,7 @@ namespace LinkedList
             else
             {
                 Node temp = head;
-                while (temp.next != null) 
+                while (temp.next != null)
                 {
                     temp = (Node)temp.next;
                 }
@@ -53,12 +53,35 @@ namespace LinkedList
         public void AddAtfirst(int data)
         {
             Node newNode1 = new Node(data);
-        newNode1 = head;
+            newNode1 = head;
             head = newNode1;
             Console.WriteLine("{0} is added" + newNode1.data);
         }
+    }
+
+    internal void InsertBetween(int previous, int data, int after)
+    {
+        Node temp = head;
+        Node newNode = new Node(data);
+        Node store;
+        while (temp != null)
+        {
+            if (temp.data == previous && temp.next.data == after)
+            {
+                store = temp.next;
+                temp.next.next = newNode;
+                newNode = store;
+            }
+            else
+            {
+                temp = (Node)temp.next;
+            }
+        }
+    }
 }
-}
+
+    
+
 
 
 
