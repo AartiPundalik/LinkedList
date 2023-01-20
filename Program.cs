@@ -81,6 +81,15 @@ namespace LinkedList
                     num6.Search(30);
                     break;
 
+                case 8:
+                    LinkedList num7 = new LinkedList();
+                    num7.Addlast(56);
+                    num7.Addlast(30);
+                    num7.Addlast(70);
+                    num7.SearchNodeAddNode(30, 40);
+                    num7.Display();
+                    break;
+
             }
 
 
