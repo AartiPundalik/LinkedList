@@ -15,7 +15,7 @@ namespace LinkedList
             
                 Console.WriteLine("Welcome to the Linked List");
                 Console.WriteLine("Enter a program number given below");
-                Console.WriteLine("1:- Linked List\n" + "2:- Custom Linked Listed\n" + "3:- Linked List U 3\n" + "4:- Insert Node\n");
+                Console.WriteLine("1:- Linked List\n" + "2:- Custom Linked Listed\n" + "3:- Linked List U 3\n" + "4:- Insert Node\n"5:- Deletion of Node\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -50,6 +50,16 @@ namespace LinkedList
                     num3.Display();
                     num3.InsertBetween(56, 30, 70);
                     num3.Display();
+                    break;
+
+                case 5:
+                    LinkedList num4 = new LinkedList();
+                    num4.Addlast(56);
+                    num4.Addlast(30);
+                    num4.Addlast(70);
+                    num4.Display();
+                    num4.DeleteFirstNode(56);
+                    num4.Display();
                     break;
 
             }

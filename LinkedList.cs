@@ -57,6 +57,11 @@ namespace LinkedList
             head = newNode1;
             Console.WriteLine("{0} is added" + newNode1.data);
         }
+
+        internal void InsertBetween(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     internal void InsertBetween(int previous, int data, int after)
@@ -78,7 +83,21 @@ namespace LinkedList
             }
         }
     }
+
+internal Node DeleteFirstNode(int data)
+{
+    if (this.head == null)
+    {
+        return null;
+    }
+    this.head = this.head.next;
+    Console.WriteLine("Element First{0} Is Removed", data);
+    return this.head;
 }
+    }
+}
+
+
 
     
 
