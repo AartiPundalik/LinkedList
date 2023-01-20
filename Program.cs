@@ -62,6 +62,16 @@ namespace LinkedList
                     num4.Display();
                     break;
 
+                case 6:
+                    LinkedList num5 = new LinkedList();
+                    num5.Addlast(56);
+                    num5.Addlast(30);
+                    num5.Addlast(70);
+                    num5.Display();
+                    num5.DeleteLastNode(56);
+                    num5.Display();
+                    break;
+
             }
 
 
